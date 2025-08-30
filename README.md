@@ -20,7 +20,7 @@
 
 シーン別BGM: タイトル、マップ探索、通常戦闘、ボス戦でそれぞれ異なるBGMが流れ、冒険を彩ります。
 
-🛠️ 下のURLから飛ぶことで遊ぶことができます
+🛠️ 遊ぶには下のURLから
 
 https://imshota1009.github.io/Prototype-of-Freiren-the-Funeral/
 
