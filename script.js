@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "断頭台のアウラ",
             sprite: "😈",
             image: "aura_battle.png",
-            stats: { hp: 700, mp: 1000, atk: 40, def: 30 },
-            exp: 1000, gold: 500,
+            stats: { hp: 2000, mp: 1000, atk: 40, def: 30 },
+            exp: 100, gold: 500,
             special: "アゼリューゼ",
             actions: [
                 { name: "断頭吏の斬撃", type: "physical", power: 1.1 },
@@ -1064,6 +1064,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('dialogue-close-button').addEventListener('click', () => showModal('dialogue-modal', false));
 
 });
+
 
 
 
