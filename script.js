@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "断頭台のアウラ",
             sprite: "😈",
             image: "aura_battle.png",
-            stats: { hp: 1500, mp: 1000, atk: 40, def: 30 },
+            stats: { hp: 700, mp: 1000, atk: 40, def: 30 },
             exp: 1000, gold: 500,
             special: "アゼリューゼ",
             actions: [
                 { name: "断頭吏の斬撃", type: "physical", power: 1.1 },
-                { name: "闇の波動", type: "magic", power: 1.3 },
-                { name: "魂の葬送", type: "magic", power: 1.5 },
+                { name: "闇の波動", type: "magic", power: 2.3 },
+                { name: "魂の葬送", type: "magic", power: 2.5 },
                 { name: "精神支配の鞭", type: "physical", power: 1.2 }
             ]
         }
@@ -1059,4 +1059,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('dialogue-close-button').addEventListener('click', () => showModal('dialogue-modal', false));
 
 });
+
 
