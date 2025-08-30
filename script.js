@@ -658,7 +658,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setTimeout(() => {
                 if (player.stats.mp > currentEnemy.stats.mp) {
+                    battleLog.push(`「私の魂を天秤を載せたな」`);
+                    battleLog.push(`「お前は私の魔力を見誤ったんだ」`);
+                    battleLog.push(`「ふ、ふざけるな..私は500年以上生きた大魔族だ」`);
+                    battleLog.push(`「アウラ、お前の前にいるのは、千年以上生きた魔法使いだ」`);
                     battleLog.push(`天秤は${player.name}に傾いた！`);
+                    battleLog.push(`「アウラ、自害しろ」`);
                     battleLog.push(`「馬鹿な…この私が…」`);
                     currentEnemy.hp = 0;
                     winBattle();
@@ -1059,5 +1064,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('dialogue-close-button').addEventListener('click', () => showModal('dialogue-modal', false));
 
 });
+
 
 
