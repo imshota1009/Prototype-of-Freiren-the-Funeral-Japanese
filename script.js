@@ -1022,10 +1022,10 @@ document.addEventListener('DOMContentLoaded', () => {
             player.level++;
             player.exp -= player.nextLevelExp;
             player.nextLevelExp = Math.floor(player.nextLevelExp * 1.5);
-            player.stats.maxHp += 15;
-            player.stats.maxMp += 10;
-            player.stats.baseAtk += 2;
-            player.stats.def += 3;
+            player.stats.maxHp += 70;
+            player.stats.maxMp += 150;
+            player.stats.baseAtk += 12;
+            player.stats.def += 10;
             player.stats.hp = player.stats.maxHp;
             player.stats.mp = player.stats.maxMp;
             addLog(`レベルアップして${player.level}になった！`, 'system');
@@ -1064,6 +1064,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('dialogue-close-button').addEventListener('click', () => showModal('dialogue-modal', false));
 
 });
+
 
 
 
