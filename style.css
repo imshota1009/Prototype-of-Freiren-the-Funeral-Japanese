@@ -190,7 +190,7 @@ body {
     gap: 10px;
 }
 #main-menu-buttons .game-button {
-    margin-top: 0;
+    margin: 0;
 }
 
 /* ===== Battle Screen ===== */
@@ -201,23 +201,14 @@ body {
 }
 .battle-container { display: flex; flex-direction: column; width: 100%; height: 100%; background-color: transparent; }
 .battle-arena { flex-grow: 1; display: flex; justify-content: space-around; align-items: center; }
-.battle-character { text-align: center; }
+.battle-character { text-align: center; width: 200px; }
 .battle-sprite { font-size: 6rem; }
-#player-battle-sprite {
-    height: 128px;
-    width: 128px;
+#player-battle-sprite, #enemy-sprite-img {
+    max-width: 100%;
+    max-height: 150px;
     object-fit: contain;
-    filter: drop-shadow(2px 2px 4px #000);
+    filter: drop-shadow(2px 4px 6px black);
 }
-.battle-sprite-img {
-    height: 192px; /* Increased size for bosses */
-    width: auto;
-    max-width: 256px;
-    object-fit: contain;
-    filter: drop-shadow(3px 3px 6px #000);
-    display: none; /* Hidden by default */
-}
-
 .battle-char-name { margin-top: 10px; font-size: 1.5rem; }
 .battle-char-hp { font-size: 1.2rem; color: var(--text-dark); }
 .battle-ui { height: 250px; border-top: 1px solid var(--border-color); display: flex; }
@@ -226,11 +217,11 @@ body {
 #battle-actions .game-button { margin-top: 0; }
 
 
-/* ===== Menu Screens (Status, Inv, etc) ===== */
+/* ===== Town/Status/Inventory/Spellbook Screen ===== */
 .menu-screen {
     justify-content: flex-start;
     text-align: center;
-    background: linear-gradient(rgba(26, 28, 32, 0.85), rgba(26, 28, 32, 0.85)), url('menu_background.jpg');
+    background: linear-gradient(rgba(26, 28, 32, 0.85), rgba(26, 28, 32, 0.85)), url('menu_background.png');
     background-size: cover;
     background-position: center;
 }
@@ -250,8 +241,8 @@ body {
 }
 #status-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 40px; margin-top: 20px; text-align: left; background-color: rgba(42, 45, 52, 0.8); padding: 20px; border-radius: 5px; }
 #gold-display { margin-bottom: 20px; font-size: 1.2rem; color: var(--accent-gold); }
-#inventory-list, #spellbook-list, #quest-list { list-style: none; padding: 0; margin-top: 0; width: 80%; max-width: 600px; }
-#inventory-list li, #spellbook-list li { 
+#inventory-list, #spellbook-list, #quest-list { list-style: none; padding: 0; margin-top: 0; width: 80%; max-width: 600px; text-align: left; }
+#inventory-list li, #spellbook-list li, #quest-list li { 
     background-color: var(--bg-ui-light); 
     padding: 10px 15px; 
     border-radius: 3px; 
@@ -261,14 +252,14 @@ body {
     align-items: center;
 }
 #quest-list li {
-    background-color: var(--bg-ui-light);
-    padding: 15px;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 }
-#quest-list h3 { margin: 0 0 5px; color: var(--accent-gold);}
-#quest-list p { margin: 0; color: var(--text-dark); }
+#quest-list li strong {
+    color: var(--accent-gold);
+}
+
 
 /* Magic Association Screen */
 .dialogue-panel {
@@ -334,7 +325,9 @@ body {
     background: var(--bg-ui-light);
     border-radius: 5px;
 }
-#dialogue-modal .dialogue-panel {
-    max-width: 500px;
+.dialogue-panel {
+    max-width: 600px;
 }
+
+
 
