@@ -22,8 +22,7 @@
 
 🛠️ 遊ぶには下のURLから
 
-https://imshota1009.github.io/Prototype-of-Freiren-the-Funeral-Japanese
-/
+https://imshota1009.github.io/Prototype-of-Freiren-the-Funeral-Japanese/
 
 操作方法:
 
