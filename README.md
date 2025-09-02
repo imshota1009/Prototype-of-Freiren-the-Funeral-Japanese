@@ -52,7 +52,7 @@ HTML / CSS / JavaScript で構築されたシンプルなブラウザRPGです�
 
 以下のリンクからすぐに遊べます👇
 
-👉 [葬送のフリーレン Online - 時の彼方の旅路](https://imshota1009.github.io/Prototype-of-Freiren-the-Funeral)
+👉 [葬送のフリーレン Online - 時の彼方の旅路](https://imshota1009.github.io/Freiren-the-Funeral)
 
 ---
 
